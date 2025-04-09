@@ -1,97 +1,97 @@
-📊 Script de filtragem de dados em planilha e envio de emails automático
-
-Este projeto demonstra a criação de um script completo e automatizado que filtra dados de uma planilha Excel com base em colunas definidas pelo usuário, gera novas planilhas personalizadas e envia automaticamente os links de acesso a essas planilhas via e-mail utilizando a API do Gmail.
+📊 Script de Filtragem de Dados em Planilha e Envio Automático de E-mails
+Este projeto demonstra um script automatizado em Python capaz de filtrar dados de uma planilha Excel com base em colunas definidas pelo usuário, gerar novas planilhas personalizadas e enviar automaticamente os links de acesso via e-mail utilizando a API do Gmail e o Google Drive.
 
 🎯 Objetivo
-
-Mostrar minha capacitação na criação de scripts automatizados utilizando Python, Google Drive API, Gmail API e manipulação de planilhas com Pandas.
-
-⚙️ Tecnologias Utilizadas
+Mostrar minha capacidade na criação de scripts automatizados para otimizar processos repetitivos, utilizando ferramentas robustas como:
 
 Python
 
-Pandas
-
-OpenPyXL
+Google Drive API
 
 Gmail API
 
-Google Drive API
+Pandas
 
-OAuth2 (Autenticação Google)
+⚙️ Tecnologias Utilizadas
+🐍 Python
 
-Google Auth
+🧠 Pandas
 
-Googleapiclient
+📊 OpenPyXL
 
-dotenv (para segurança e variáveis de ambiente)
+📧 Gmail API
+
+☁️ Google Drive API
+
+🔐 OAuth2 (Autenticação Google)
+
+🌎 Googleapiclient
+
+🔒 dotenv (para variáveis de ambiente seguras)
 
 🚀 Instalação
+bash
+Copiar
+Editar
+# Clone o repositório
+git clone https://github.com/jotaz77/automacao-filtragem-envio-email.git
+cd automacao-filtragem-envio-email
 
-1. Clone o repositório
-
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
-
-2. Crie um ambiente virtual (opcional, mas recomendado)
-
+# Crie e ative o ambiente virtual (opcional, mas recomendado)
 python -m venv venv
-venv\Scripts\activate   # Windows
-# ou
-source venv/bin/activate   # macOS/Linux
+venv\Scripts\activate  # Windows
 
-3. Instale as dependências
+# ou no macOS/Linux
+source venv/bin/activate
 
+# Instale as dependências
 pip install -r requirements.txt
+Adicione suas credenciais do Google:
 
-4. Adicione suas credenciais do Google
+Coloque o arquivo credentials.json (obtido no Google Cloud Console) na raiz do projeto.
 
-Coloque o arquivo credentials.json (obtido no Google Cloud Console) na pasta raiz do projeto.
+⚠️ Esse arquivo está listado no .gitignore e não deve ser enviado para o GitHub.
 
-⚠️ Esse arquivo não deve ser incluído no GitHub. Ele já está listado no .gitignore.
+💡 Como Usar
+Tenha uma planilha base .xlsx com os dados que deseja filtrar.
 
-💡 Como usar
+Execute o script script.py.
 
-Tenha uma planilha base (.xlsx) contendo os dados que deseja filtrar.
+Informe:
 
-Ao rodar o script, ele pedirá:
+Nome da planilha
 
-O nome da planilha.
+Colunas para filtragem (separadas por vírgula, se mais de uma)
 
-As colunas que deseja filtrar (pode informar mais de uma separando por vírgula).
-
-A coluna que contém os e-mails.
+Coluna que contém os e-mails
 
 O script irá:
 
-Filtrar a planilha automaticamente com base nos valores únicos dessas colunas.
+Filtrar os dados automaticamente
 
-Gerar novas planilhas com os dados filtrados.
+Gerar novas planilhas com os dados filtrados
 
-Subir essas planilhas para o seu Google Drive.
+Fazer upload para o Google Drive
 
-Enviar os links para os respectivos e-mails automaticamente.
+Enviar os links das planilhas por e-mail para os destinatários
 
-🧳 Exemplo prático
-
-
-
-📁 Estrutura do Projeto
-
-📆 projeto
- ├── script.py
- ├── credentials.json          # ← NÃO subir para o GitHub
- ├── token.json                # ← Gerado após o login OAuth2
- ├── README.md
- ├── requirements.txt
- ├── planilhas_geradas         # ← Planilhas filtradas geradas automaticamente
- └── .gitignore
-
+🧳 Estrutura do Projeto
+bash
+Copiar
+Editar
+📁 projeto
+├── script.py
+├── credentials.json       # ← NÃO subir para o GitHub
+├── token.json             # ← Gerado após login OAuth2
+├── README.md
+├── requirements.txt
+├── .env                   # Variáveis de ambiente (opcional)
+├── planilhas_geradas/     # Planilhas filtradas geradas automaticamente
+└── .gitignore
 📜 Licença
-
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 🤝 Contato
+Curtiu o projeto? Quer trocar uma ideia ou fazer sugestões?
 
-Fique à vontade para me chamar no LinkedIn para trocar uma ideia ou se quiser saber mais sobre o projeto!
-
+Me chama no LinkedIn (https://www.linkedin.com/in/almir-cavalcante/)— sempre bom conversar sobre automações e tecnologia!
